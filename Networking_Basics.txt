@@ -1,0 +1,58 @@
+
+Networking Basics:
+
+IP Address
+OSI Model
+Private Ip & Public Ip
+Reserved IP Address - Network &  Broadcast
+Network Interface & MAC Address
+Subnetting
+Private Subnet & Public Subnet
+Route Table
+Routes
+Internet Gateway
+NAT Gateway
+Egress only Internet Gateway For IPV6 Traffic
+
+========================================================================================
+
+Subnetting Example:
+
+10.0.0.0/16 - Network Portion 10.0 & Host Portion - 0.0
+Total 32 bits
+32bits - 16 bits = 16 bits = 2^16 = 65536 = Total Host Ip Adresses Allocation
+
+10.0.0.0/24 - 10.0.0.0 to 10.0.0.255 = 32 bits - 24 bits = 8 bits = 2^8 = 256 Total IPs
+10.0.1.0/24 - 10.0.1.0 to 10.0.1.255
+10.0.2.0/24 - 10.0.2.0 to 10.0.2.255
+10.0.3.0/24 - 10.0.3.0 to 10.0.3.255
+
+First ip & last IP reserved in traditional architecture 
+
+
+In AWS = 5 IPs are reserved per network = First, Second, Third, Fourth, & Last Ip 
+So Per Network we have 251 Ips
+
+================================================================================
+
+First ip 0.0  - Network Address
+Second ip 0.1 - Reserved by AWS for the VPC router
+Third ip  0.2 - Reserved by AWS DNS
+Fourth ip 0.3 - Reserved by AWS Future Use
+Last ip 0.255 - Network Boardcast 
+
+===================================================================================
+RFC 1918 Private Ip Address Range:
+
+10.0.0.0/8
+172.16.0.0/12
+192.168.0.0/16
+
+===============================================================
+
+
+
+
+
+
+
